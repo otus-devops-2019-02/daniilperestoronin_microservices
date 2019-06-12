@@ -1,7 +1,14 @@
 # daniilperestoronin_microservices
 daniilperestoronin microservices repository
 
-# Выполнено ДЗ № 12
+# ДЗ № 13
+
+## В процессе сделано:
+ - Создан docker host
+ - Создан свой образа
+ - Работа с Docker Hub
+
+# ДЗ № 12
 
 ## В процессе сделано:
  - Настроена интергация с Travis, Slack
