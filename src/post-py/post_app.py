@@ -274,4 +274,4 @@ if __name__ == "__main__":
         # and comment out the one below
         structlog.processors.JSONRenderer(sort_keys=True)
     ])
-    app.run(host='0.0.0.0', debug=True)
+    app.run()
