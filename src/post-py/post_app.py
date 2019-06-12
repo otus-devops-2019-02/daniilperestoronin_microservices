@@ -123,12 +123,12 @@ def find_posts():
 @app.route("/posts")
 def posts():
     with zipkin_span(
-        service_name='post',
-        zipkin_attrs=zipkin_fill_attrs(request.headers),
-        span_name='/posts',
-        transport_handler=zipkin_transport,
-        port=5000,
-        sample_rate=100,
+            service_name='post',
+            zipkin_attrs=zipkin_fill_attrs(request.headers),
+            span_name='/posts',
+            transport_handler=zipkin_transport,
+            port=5000,
+            sample_rate=100,
     ):
         posts = find_posts()
     return posts
@@ -211,12 +211,12 @@ def find_post(id):
 @app.route('/post/<id>')
 def get_post(id):
     with zipkin_span(
-        service_name='post',
-        zipkin_attrs=zipkin_fill_attrs(request.headers),
-        span_name='/post/<id>',
-        transport_handler=zipkin_transport,
-        port=5000,
-        sample_rate=100,
+            service_name='post',
+            zipkin_attrs=zipkin_fill_attrs(request.headers),
+            span_name='/post/<id>',
+            transport_handler=zipkin_transport,
+            port=5000,
+            sample_rate=100,
     ):
         post = find_post(id)
     return post
@@ -267,11 +267,11 @@ if __name__ == "__main__":
     logg.disabled = True   # disable default logger
     # define log structure
     structlog.configure(processors=[
-         structlog.processors.TimeStamper(fmt="%Y-%m-%d %H:%M:%S"),
-         structlog.stdlib.add_log_level,
-         # to see indented logs in the terminal, uncomment the line below
-         # structlog.processors.JSONRenderer(indent=2, sort_keys=True)
-         # and comment out the one below
-         structlog.processors.JSONRenderer(sort_keys=True)
-     ])
+        structlog.processors.TimeStamper(fmt="%Y-%m-%d %H:%M:%S"),
+        structlog.stdlib.add_log_level,
+        # to see indented logs in the terminal, uncomment the line below
+        # structlog.processors.JSONRenderer(indent=2, sort_keys=True)
+        # and comment out the one below
+        structlog.processors.JSONRenderer(sort_keys=True)
+    ])
     app.run(host='0.0.0.0', debug=True)
