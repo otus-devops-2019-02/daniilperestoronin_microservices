@@ -3,7 +3,9 @@ FROM python:3.6.0-alpine
 WORKDIR /app
 ADD . /app
 
-RUN pip install -r /app/requirements.txt
+RUN apk --update add --virtual build-deps \
+                        gcc libc-dev \
+    && pip install -r /app/requirements.txt
 
 ENV POST_DATABASE_HOST post_db
 ENV POST_DATABASE posts
