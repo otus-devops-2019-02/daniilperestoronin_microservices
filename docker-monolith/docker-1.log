@@ -9,3 +9,9 @@ ww-ics-view                                       0.1                 8637a27b10
 ww-ics-view                                       latest              8637a27b10c9        5 months ago        116MB
 nginx                                             latest              568c4670fa80        6 months ago        109MB
 hello-world                                       latest              4ab4c602aa5e        9 months ago        1.84kB
+
+docker-machine create --driver google \
+ --google-machine-image https://www.googleapis.com/compute/v1/projects/ubuntu-os-cloud/global/images/family/ubuntu-1604-lts \
+ --google-machine-type n1-standard-1 \
+ --google-zone europe-west1-b \
+ docker-host
