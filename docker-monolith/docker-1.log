@@ -1,3 +1,4 @@
+REPOSITORY                                        TAG                 IMAGE ID            CREATED             SIZE
 nginx                                             alpine              0be75340bd9b        8 weeks ago         16.1MB
 ww-ics-view                                       0.0.1               3be866cd923e        2 months ago        116MB
 mongo                                             latest              0da05d84b1fe        4 months ago        394MB
