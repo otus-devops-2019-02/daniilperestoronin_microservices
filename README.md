@@ -7,7 +7,7 @@ daniilperestoronin microservices repository
 - Мониторинг состояния микросервисов
 - Сбор метрик хоста с использованием экспортера
 
-https://cloud.docker.com/u/danniilperestoronin/repository/docker/danniilperestoronin/prometheus
+https://cloud.docker.com/u/danniilperestoronin/
 
 # ДЗ № 16
 
