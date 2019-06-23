@@ -7,20 +7,17 @@ services:
     networks:
     - back_net
   ui:
-    build: ../src/ui
     image: ${USERNAME}/ui:${UI_SERVICE_VERSION}
     ports:
     - ${UI_PORT}:9292/tcp
     networks:
     - front_net
   post:
-    build: ../src/post-py
     image: ${USERNAME}/post:${POST_SERVICE_VERSION}
     networks:
     - back_net
     - front_net
   comment:
-    build: ../src/comment
     image: ${USERNAME}/comment:${COMMENT_SERVICE_VERSION}
     networks:
     - back_net
