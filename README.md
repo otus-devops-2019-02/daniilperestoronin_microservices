@@ -3,6 +3,12 @@ daniilperestoronin microservices repository
 
 # ДЗ № 18
 
+Реализовано: 
+- Мониторинг Docker контейнеров
+- Визуализация метрик
+- Сбор метрик работы приложения и бизнес метрик
+- Настройка и проверка алертинга
+
 ### Environment settings
 ```bash
 $ export GOOGLE_PROJECT=_ваш-проект_
