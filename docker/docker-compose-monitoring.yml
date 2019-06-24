@@ -1,5 +1,7 @@
 version: '3.3'
+
 services:
+
   prometheus:
     image: ${USERNAME}/prometheus
     ports:
@@ -10,6 +12,7 @@ services:
     - '--config.file=/etc/prometheus/prometheus.yml'
     - '--storage.tsdb.path=/prometheus'
     - '--storage.tsdb.retention=1d'
+
   node-exporter:
     image: prom/node-exporter:v0.15.2
     user: root
@@ -21,6 +24,7 @@ services:
     - '--path.procfs=/host/proc'
     - '--path.sysfs=/host/sys'
     - '--collector.filesystem.ignored-mount-points="^/(sys|proc|dev|host|etc)($$|/)"'
+
   cadvisor:
     image: google/cadvisor:v0.29.0
     volumes:
@@ -30,6 +34,7 @@ services:
     - '/var/lib/docker/:/var/lib/docker:ro'
     ports:
     - '8080:8080'
+
   grafana:
     image: grafana/grafana:5.0.0
     volumes:
@@ -41,8 +46,9 @@ services:
     - prometheus
     ports:
     - 3000:3000
+
   alertmanager:
-    image: ${USER_NAME}/alertmanager
+    image: ${USERNAME}/alertmanager
     command:
     - '--config.file=/etc/alertmanager/config.yml'
     ports:
