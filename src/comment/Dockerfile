@@ -1,4 +1,4 @@
-FROM ruby:2.4.6-alpine
+FROM ruby:2.2
 RUN apk add --no-cache build-base
 
 ENV APP_HOME /app
