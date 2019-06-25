@@ -3,6 +3,12 @@ daniilperestoronin microservices repository
 
 # ДЗ № 19
 
+Реализовано: 
+- Сбор неструктурированных логов
+- Визуализация логов
+- Сбор структурированных логов
+- Распределенная трасировка
+
 ### Environment settings
 
 ```bash
