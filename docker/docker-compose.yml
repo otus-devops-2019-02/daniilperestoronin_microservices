@@ -14,7 +14,7 @@ services:
   ui:
     image: ${USERNAME}/ui:${UI_SERVICE_VERSION}
     ports:
-    - ${UI_PORT}:9292/tcp
+    - "9292:9292"
     environment:
     - POST_SERVICE_HOST=post
     - POST_SERVICE_PORT=5000
