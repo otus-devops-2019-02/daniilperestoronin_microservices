@@ -1,6 +1,24 @@
 # daniilperestoronin_microservices
 daniilperestoronin microservices repository
 
+# ДЗ № 20
+
+Реализовано: 
+- Добавлены манифест файлы для запуска приложения
+- Пройден тьюториал (https://github.com/kelseyhightower/kubernetes-the-hard-way)
+
+для деплоя:
+```bash
+kubectl apply -f mongo-deployment.yml
+kubectl apply -f mongo-service.yaml
+kubectl apply -f post-deployment.yml
+kubectl apply -f post-service.yaml
+kubectl apply -f comment-deployment.yml
+kubectl apply -f comment-service.yaml
+kubectl apply -f ui-deployment.yml
+kubectl apply -f ui-service.yaml
+```
+
 # ДЗ № 19
 
 Реализовано: 
