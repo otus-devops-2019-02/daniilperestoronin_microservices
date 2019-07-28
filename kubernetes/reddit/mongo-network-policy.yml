@@ -17,4 +17,4 @@ spec:
     - podSelector:
         matchLabels:
           app: reddit
-          component: comment
+          component: post
