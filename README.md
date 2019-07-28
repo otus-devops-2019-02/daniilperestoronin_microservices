@@ -1,6 +1,12 @@
 # daniilperestoronin_microservices
 daniilperestoronin microservices repository
 
+# ДЗ № 21
+
+- Развернуто локальное окружение для работы с Kubernetes
+- Развернут Kubernetes в GKE
+- Запущен reddit в Kubernetes
+
 # ДЗ № 20
 
 Реализовано: 
