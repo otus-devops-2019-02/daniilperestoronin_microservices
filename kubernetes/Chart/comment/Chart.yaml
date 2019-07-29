@@ -1,6 +1,6 @@
-name: post
+name: comment
 version: 1.0.0
-description: OTUS reddit application post service
+description: OTUS reddit application comment service
 maintainers:
   - name: Daniil
     email: daniil.perestoronin@gmail.com
