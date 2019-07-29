@@ -1,6 +1,18 @@
 # daniilperestoronin_microservices
 daniilperestoronin microservices repository
 
+# ДЗ № 22
+
+Добавлены:
+- Ingress Controller
+- Ingress
+- Secret
+- TLS
+- LoadBalancer Service
+- Network Policies
+- PersistentVolumes
+- PersistentVolumeClaims
+
 # ДЗ № 21
 
 - Развернуто локальное окружение для работы с Kubernetes
