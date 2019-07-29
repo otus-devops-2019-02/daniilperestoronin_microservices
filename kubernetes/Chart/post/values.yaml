@@ -1,0 +1,9 @@
+service:
+  internalPort: 5000
+  externalPort: 5000
+
+image:
+  repository: danniilperestoronin/post
+  tag: 0.0.1
+
+databaseHost:
