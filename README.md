@@ -1,6 +1,12 @@
 # daniilperestoronin_microservices
 daniilperestoronin microservices repository
 
+# ДЗ № 23
+
+- Добавлен Helm
+- Развернут Gitlab в Kubernetes
+- Настроен CI/CD конвейера в Kubernetes
+
 # ДЗ № 22
 
 Добавлены:
