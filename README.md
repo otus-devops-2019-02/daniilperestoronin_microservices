@@ -1,6 +1,14 @@
 # daniilperestoronin_microservices
 daniilperestoronin microservices repository
 
+# ДЗ № 24
+
+Добавлены:
+- prometheus
+- grafana
+- alertmanager
+- различные экспортеры для метрик prometheus 
+
 # ДЗ № 23
 
 - Добавлен Helm
